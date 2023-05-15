@@ -1,48 +1,113 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Reset default margin and padding */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    width: 100%;
-    max-width: 1400px;
-    display: block;
-    margin: auto;
-    min-height: 100vh;
-    background: #191919;
-    font-family: sans-serif;
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f2f2f2;
 }
 
-.navbar{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9;
-    background: #1a1a1a;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.link-group{
-    list-style: none;
-    display: flex;
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
 }
 
-.link a{
-    color: #fff;
-    opacity: 0.5;
-    text-decoration: none;
-    text-transform: capitalize;
-    padding: 10px 30px;
-    margin: 0 20px;
-    line-height: 80px;
-    transition: .5s;
-    font-size: 20px;
+nav ul {
+  list-style-type: none;
 }
 
-.link a:hover, .link.active a{
-    opacity: 1;
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main content styles */
+#intro {
+  background-color: #fff;
+  padding: 40px;
+}
+
+#intro img {
+  max-width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+#skills ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+#projects ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+#contact {
+  background-color: #fff;
+  padding: 40px;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+}
+
+#contact form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+#contact label {
+  font-weight: bold;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+#contact button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+  background-color: #45a049;
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
 }
